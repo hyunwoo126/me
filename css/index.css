@@ -1,0 +1,137 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+body {
+    position: relative;
+    margin: 0px;
+    min-height: 100%;
+}
+.btn-info{
+    -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+    box-shadow: 0px 2px 5px 1px darkgrey;
+    padding: 4px 50px;
+    margin: 12px auto;
+}
+body{
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+body, .content{
+    width: 100%;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{ font-weight: 300; }
+.profile-pic{
+    width: 200px;
+    box-shadow: 0px 4px 6px 2px lightgrey;
+    border-radius: 50%;
+}
+.techList{
+    color: grey;
+}
+.techList .icon{
+    font-size: 60px;
+}
+.project{
+    text-align: center;
+    padding: 50px 0px;   
+}
+.img-project{
+    width: 100%;
+    max-width: 700px;
+}
+.title-project{
+    color: #337ab7;
+}
+.project:nth-child(even){
+    /* clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%); */
+    /* background-color: lightgrey; */
+}
+.project.lincko{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 96%);
+    background-color: lightyellow;
+    /* background-color: lightgrey; */
+}
+.project.search-redapp{
+    padding: 25px 0px;
+    clip-path: polygon(0% 0%, 100% 4%, 100% 96%, 0% 100%);
+}
+.project.redapp{
+    clip-path: polygon(0% 4%, 100% 0%, 100% 100%, 0% 96%);
+    background-color: #ffdddd;
+    /* background-color: lightgrey; */
+}
+.project.concepts{
+    padding: 25px 0px;
+    /* background-color: lightblue; */
+    /* clip-path: polygon(0% 0%, 100% 4%, 100% 96%, 0% 100%); */
+}
+
+.center-main{
+    text-align: center;
+    max-width: 1200px;
+    margin-left: auto; margin-right: auto;
+}
+.header{
+    position: relative;
+    background-color: lightyellow;
+    /* background-color: lightgrey; */
+}
+.bg_wrapper{
+    background-color: black;
+    /* clip-path: polygon(0 0%, 100% 0%, 100% 96%, 0% 100%); */
+}
+.bg{
+    height: 590px;
+    opacity: 0.44;
+    background: url(../img/yunnan-flagsit.jpg) no-repeat fixed;
+    background-size: cover;
+    /* background-size: auto 100%; */
+    background-position: right 100%;
+}
+.intro{
+    color: white;
+    text-align: left;
+    /* transform: translateY(-620px); */
+    /* height: 0px; */
+    position: absolute;
+    top: 60%;
+    padding-left: 10px;
+}
+.intro > h1{
+    margin: 0px;
+}
+.intro .fa-angle-down{
+    font-size: 40px;
+}
+.my-projects{
+    margin-bottom: 0px;
+}
+
+.footer{
+    clip-path: polygon(0% 4%, 100% 0%, 100% 100%, 0% 100%);
+    background-color: #e8e8e8;
+    padding: 60px 0px;
+}
+
+.fav-tech-stack img{
+    height: 50px;
+}
+.fav-tech-stack img.byWidth{
+    height: auto; width: 100px;
+}
+@media (min-width:320px){}/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width:375px){}/* iPhone 6 portrait */
+@media (min-width:481px){}/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (min-width:641px){}/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-width:961px){}/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width:1025px){
+    .bg{ height: 800px; }
+    .intro{ top: 40%; }
+}/* big landscape tablets, laptops, and desktops */
+@media (min-width:1281px){
+    .bg{ height: 1000px; }
+}/* hi-res laptops and desktops */

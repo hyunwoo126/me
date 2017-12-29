@@ -45,87 +45,54 @@ body, .content{
     padding: 50px 0px;
     
 }
-.project:nth-child(even){
-    /* clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%); */
-    background-color: lightgrey;
+.project:nth-child(odd){
+    clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
 }
 .project.lincko{
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 96%);
-    padding: 25px 0px;
-    /* background-color: lightyellow; */
-    /* background-color: lightgrey; */
-}
-.project.search-redapp{
-    clip-path: polygon(0% 0%, 100% 4%, 100% 96%, 0% 100%);
+    background-color: lightyellow;
+    background-color: lightgrey;
 }
 .project.redapp{
-    clip-path: polygon(0% 4%, 100% 0%, 100% 100%, 0% 96%);
-    /* background-color: lightcoral; */
-    /* background-color: lightgrey; */
+    background-color: lightcoral;
+    background-color: lightgrey;
 }
-.project.concepts{
-    clip-path: polygon(0% 0%, 100% 4%, 100% 96%, 0% 100%);
-}
-
 .center-main{
     text-align: center;
     max-width: 1000px;
     margin-left: auto; margin-right: auto;
 }
-.header{
-    /* background-color: lightyellow;
-    background-color: lightgrey; */
-}
-.bg_wrapper{
+.header_wrapper{
     background-color: black;
     clip-path: polygon(0 0%, 100% 0%, 100% 96%, 0% 100%);
 }
-.bg{
+.header{
     height: 590px;
-    opacity: 0.44;
+    opacity: 0.6;
     background: url(img/yunnan-flagsit.jpg) no-repeat fixed;
     background-size: cover;
     /* background-size: auto 100%; */
     background-position: right 100%;
 }
 .intro{
-    color: white;
-    text-align: left;
-    transform: translateY(-320px);
-    height: 0px;
+    transform: translateY(-100px);
 }
-.intro > h1{
-    margin: 0px;
-}
-
-@media (min-width:320px){}/* smartphones, iPhone, portrait 480x320 phones */
-@media (min-width:375px){}/* iPhone 6 portrait */
-@media (min-width:481px){}/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
-@media (min-width:641px){}/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-@media (min-width:961px){}/* tablet, landscape iPad, lo-res laptops ands desktops */
-@media (min-width:1025px){
-    .bg{ height: 800px; }
-}/* big landscape tablets, laptops, and desktops */
-@media (min-width:1281px){
-    .bg{ height: 1000px; }
-}/* hi-res laptops and desktops */
 
 </style>
 </head>
 <body>
 <div class="content">
-    <div class="header">
-        <div class="bg_wrapper">
-            <div class="bg"></div>        
+    <div>
+        <div class="header_wrapper">
+            <div class="header"></div>        
         </div>
-        <div class="center-main">
-            <div class="intro">
-                    <h1>Sky Park</h1>
-                    <h3>A wannabe fullstack <strong>Frontend Developer</strong></h3>
-                    <div>hyunwoo126@gmail.com</div>
-            </div>
-            
-        </div>
+    </div>
+    
+    
+    <div class="center-main intro">
+        <img class="profile-pic" src="img/sky.jpg" />
+        <h1>Sky Park</h1>
+        <h3>A wannabe fullstack <strong>Frontend Developer</strong></h3>
+        <div>hyunwoo126@gmail.com</div>
     </div>
 
 <div class="projects">
@@ -149,7 +116,7 @@ body, .content{
         </div>
     </div>
 
-    <div class="project search-redapp">
+    <div class="project">
         <div class="row center-main">
             <div class="col-lg-8">
                 <img src="img/search-redapp.png"/>
@@ -192,7 +159,7 @@ body, .content{
     </div>
 
 
-    <div class="project concepts">
+    <div class="project">
         <div class="row center-main">
             <div class="col-lg-8">
                 <img src="img/learn-frontend-mac.png"/>
