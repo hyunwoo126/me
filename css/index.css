@@ -101,6 +101,9 @@ body, .content{
     top: 60%;
     padding-left: 10px;
 }
+.intro strong{
+    white-space: pre;
+}
 .intro > h1{
     margin: 0px;
 }
